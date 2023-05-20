@@ -17,10 +17,10 @@ Type this into the terminal
 # Setting Up Env File.
 ```js
 
-  TOKEN = bot_token
-  CLIENT_ID = bot_id
-  STATUS = dnd
-  ACTIVITY_NAME = SCRIBLLING THINGS
+  TOKEN = "bot_token"
+  CLIENT_ID = "bot_id"
+  STATUS = "dnd"
+  ACTIVITY_NAME = "SCRIBLLING THINGS"
 
 ```
 Replace `bot_token` with your bot token you can obtain your bot token from discord developer portal.
