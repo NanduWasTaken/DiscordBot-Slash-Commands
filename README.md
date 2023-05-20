@@ -33,12 +33,10 @@ Change the status property if you know what you are doing. status can be chnaged
 
 If you want to change your activity type of your bot go into ready.js in events folder and change it.
 
-# Registering Slash Comannds And Deleting All Your Commands.
-To register all of your slash commands.
-Type `node deploy.js` into your terminal.
-
+# Deleting All Your Commands.
 To delete all of your slash commands.
 Type `node delete.js` into your terminal.
+Note: Your Slash Comamnds Register Automatically When The Bot Starts.
 
 # Starting Your Bot
 To start your bot.

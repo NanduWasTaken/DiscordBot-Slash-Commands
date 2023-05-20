@@ -4,13 +4,18 @@ const {
   Client,
   Collection,
   Events,
-  GatewayIntentBits,
+  IntentsBitField,
   ActivityType,
+  REST,
+  Routes,
 } = require("discord.js");
 const config = require("./config.json");
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+  intents: [IntentsBitField.Flags.Guilds],
+});
 
 client.commands = new Collection();
+const commands = [];
 
 const commandsPath = path.join(__dirname, "commands");
 const commandFiles = fs
@@ -21,6 +26,7 @@ for (const file of commandFiles) {
   const filePath = path.join(commandsPath, file);
   const command = require(filePath);
   client.commands.set(command.data.name, command);
+  commands.push(command.data.toJSON());
 }
 
 const eventsPath = path.join(__dirname, "events");
@@ -37,6 +43,21 @@ for (const file of eventFiles) {
     client.on(event.name, (...args) => event.execute(...args));
   }
 }
+
+const rest = new REST({ version: "10" }).setToken(config.TOKEN);
+
+(async () => {
+  try {
+    const data = await rest.put(Routes.applicationCommands(config.CLIENT_ID), {
+      body: commands,
+    });
+    console.log(
+      `[✅] Successfully reloaded ${data.length} application (/) commands.`
+    );
+  } catch (error) {
+    console.error(error);
+  }
+})();
 
 // client.on("debug", console.log)
 // client.on("warn", console.log)
