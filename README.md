@@ -30,9 +30,9 @@ _____________________________________________
 
 ### Optional Configuration.
 
-Status name can be changed by changing the `SCRIBLLING THINGS` with whatever you want it to be.
-Status can be chnaged into 'dnd', 'idle', 'online' and 'invinsible.
-If you want to change your activity type of your bot go into ready.js in events folder and change it.
+Status name can be changed by changing the `SCRIBLLING THINGS` with whatever you want it to be.  
+Status can be chnaged into 'dnd', 'idle', 'online' and 'invinsible.  
+If you want to change your activity type of your bot go into ready.js in events folder and change it.  
 
 # Deleting All Your Commands.
 To delete all of your slash commands.
