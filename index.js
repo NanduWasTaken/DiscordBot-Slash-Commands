@@ -9,7 +9,6 @@ const {
   REST,
   Routes,
 } = require("discord.js");
-const config = require("./config.json");
 const client = new Client({
   intents: [IntentsBitField.Flags.Guilds],
 });
@@ -44,11 +43,11 @@ for (const file of eventFiles) {
   }
 }
 
-const rest = new REST({ version: "10" }).setToken(config.TOKEN);
+const rest = new REST({ version: "10" }).setToken(process.env.TOKEN);
 
 (async () => {
   try {
-    const data = await rest.put(Routes.applicationCommands(config.CLIENT_ID), {
+    const data = await rest.put(Routes.applicationCommands(process.env.CLIENT_ID), {
       body: commands,
     });
     console.log(
@@ -62,4 +61,4 @@ const rest = new REST({ version: "10" }).setToken(config.TOKEN);
 // client.on("debug", console.log)
 // client.on("warn", console.log)
 
-client.login(config.TOKEN);
+client.login(process.env.TOKEN);
