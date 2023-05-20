@@ -35,8 +35,8 @@ Status `dnd` can be changed into 'dnd', 'idle', 'online' and 'invinsible'.
 If you want to change your activity type of your bot go into ready.js in events folder and change it.  
 
 # Deleting Your Commands.
-To delete all of your slash commands you have delete the command file which is located in the commands directory then restart the bot.
-Note: Your Slash Command Registers Automatically When Your Bot Starts.
+To delete one of your slash commands you have delete the command file which is located in the commands directory then restart the bot.  
+Note: Your Slash Command Registers/Reloads Automatically When Your Bot Starts.
 
 # Starting Your Bot
 To start your bot.
