@@ -1,5 +1,4 @@
 const { ActivityType } = require("discord.js");
-const { STATUS, ACTIVITY_NAME } = require(".././config.json");
 
 module.exports = {
   name: "ready",
@@ -10,8 +9,8 @@ module.exports = {
       `[✅] ${client.user.tag} is on ${client.guilds.cache.size} servers!`
     );
     client.user.setPresence({
-      activities: [{ name: ACTIVITY_NAME, type: ActivityType.Playing }],
-      status: STATUS,
+      activities: [{ name: process.env.ACTIVITY_NAME, type: ActivityType.Playing }],
+      status: process.env.STATUS,
     });
   },
 };
