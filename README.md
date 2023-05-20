@@ -36,7 +36,7 @@ If you want to change your activity type of your bot go into ready.js in events 
 
 # Deleting All Your Commands.
 To delete all of your slash commands.
-Type `node delete.js` into your terminal.
+Type `node delete.js` into your terminal.  
 Note: Your Slash Comamnds Register Automatically When The Bot Starts.
 
 # Starting Your Bot
