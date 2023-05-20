@@ -26,10 +26,13 @@ Type this into the terminal
 Replace `bot_token` with your bot token you can obtain your bot token from discord developer portal.
 
 Replace  `bot_id` with your bot's client id.
+_____________________________________________
+
+### Optional Configuration.
 
 Status name can be changed by changing the `SCRIBLLING THINGS` with whatever you want it to be.
 
-Change the status property if you know what you are doing. status can be chnaged into 'dnd', 'idle', 'online' and 'invinsible.
+Status can be chnaged into 'dnd', 'idle', 'online' and 'invinsible.
 
 If you want to change your activity type of your bot go into ready.js in events folder and change it.
 
