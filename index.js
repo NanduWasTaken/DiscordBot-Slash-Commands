@@ -52,7 +52,7 @@ const rest = new REST({ version: "10" }).setToken(config.TOKEN);
       body: commands,
     });
     console.log(
-      `[✅] Successfully reloaded ${data.length} application (/) commands.`
+      `[✅] Successfully Registered ${data.length} Application (/) Commands.`
     );
   } catch (error) {
     console.error(error);
