@@ -14,7 +14,7 @@ Available commands:-
 Type this into the terminal
 `git clone https://github.com/NanduWasTaken/DiscordBot-Slash-Commands.git`
 
-# Setting Up Config Files
+# Setting Up Env File.
 ```json
 {
   "TOKEN": "bot_token",
