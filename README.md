@@ -34,10 +34,9 @@ Status name can be changed by changing the `SCRIBLLING THINGS` with whatever you
 Status `dnd` can be changed into 'dnd', 'idle', 'online' and 'invinsible'.  
 If you want to change your activity type of your bot go into ready.js in events folder and change it.  
 
-# Deleting All Your Commands.
-To delete all of your slash commands.
-Type `node delete.js` into your terminal.  
-Note: Your Slash Comamnds Register Automatically When The Bot Starts.
+# Deleting Your Commands.
+To delete all of your slash commands you have delete the command file which is located in the commands directory then restart the bot.
+Note: Your Slash Command Registers Automatically When Your Bot Starts.
 
 # Starting Your Bot
 To start your bot.
