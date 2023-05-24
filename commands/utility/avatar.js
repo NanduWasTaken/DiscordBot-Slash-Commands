@@ -13,7 +13,7 @@ module.exports = {
     const user = interaction.options.getUser("target");
     if (user)
       return interaction.reply(
-        `${user.username}'s avatar: ${user.displayAvatarURL({ dynamic: true })}`
+        `${user.username}'s avatar: ${user.displayAvatarURL({ dynamic: true, size: 1024 })}`
       );
     return interaction.reply(
       `Your avatar: ${interaction.user.displayAvatarURL()}`
