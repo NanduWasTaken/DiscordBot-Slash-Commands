@@ -15,6 +15,7 @@ Type this into the terminal
 `git clone https://github.com/NanduWasTaken/DiscordBot-Slash-Commands.git`
 
 # Setting Up Env File.
+### Rename ".env.example" file into ".env"
 ```js
 
   TOKEN = "bot_token"
