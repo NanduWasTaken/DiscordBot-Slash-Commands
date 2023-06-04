@@ -8,7 +8,7 @@ Available commands:-
 /prune:- deletes a specfic amount of messages.  
 /server:- shows server info.  
 /user:- shows user info.  
-
+/modal:- shows a example modal.
 
 # Forking the github respository
 Type this into the terminal
